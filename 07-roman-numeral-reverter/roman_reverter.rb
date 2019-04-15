@@ -11,16 +11,18 @@ class Roman
         # 500
       elsif roman[i] == "D"
         number += 500
-        
+
         # 100s
       elsif roman[i] == "C"
 
-        if roman[i + 1] == "M"
+        if roman[i + 1] == "M" || roman[i + 1] == "D"
           # subtracting the undesired addition of 1000
-          number += (900 - 1000) 
-        elsif roman[i + 1] == "D"
+          # number += (900 - 1000) 
+        #   number -= 100
+        # elsif roman[i + 1] == "D"
           # subtracting the undesired addition of 500 
-          number += (400 - 500)
+          # number += (400 - 500)
+          number -= 100
         else
           number += 100
         end
@@ -28,16 +30,12 @@ class Roman
         # 50
       elsif roman[i] == "L"
         number += 50 
-        
+
         # 10s
       elsif roman[i] == "X"
 
-        if roman[i + 1] == "C"
-          # subtracting the undesired addition of 100
-          number += (90 - 100)
-        elsif roman[i + 1] == "L"
-          # subtracting the undesired addition of 50
-          number += (40 - 50)
+        if roman[i + 1] == "C" || roman[i + 1] == "L"
+          number -= 10
         else
           number += 10
         end
@@ -45,16 +43,12 @@ class Roman
         # 5
       elsif roman[i] == "V"
         number += 5 
-       
+
         # 1s
       elsif roman[i] == "I"
 
-        if roman[i + 1] == "X"
-          # subtracting the undesired addition of 10
-          number += (9 - 10)
-        elsif roman[i + 1] == "V"
-          # subtracting the undesired addition of 5
-          number += (4 - 5)
+        if roman[i + 1] == "X" || roman[i + 1] == "V"
+          number -= 1
         else 
           number += 1
         end

@@ -9,76 +9,82 @@ describe "Roman Reverter" do
   end
 
   it "Check V" do
+    # skip
     expect(Roman.reverter("V")).must_equal 5
   end
 
   it "Check X" do
+    # skip
     expect(Roman.reverter("X")).must_equal 10
   end
 
   it "Check revert L" do
+    # skip
     expect(Roman.reverter("L")).must_equal 50
   end
 
   it "Check revert C" do
+    # skip
     expect(Roman.reverter("C")).must_equal 100
   end
 
   it "Check revert D" do
+    # skip
     expect(Roman.reverter("D")).must_equal 500
   end
 
   it "Check revert M" do
+    # skip
     expect(Roman.reverter("M")).must_equal 1000
   end
 
   it "Check symbol pair" do
-    skip
+    # skip
     expect(Roman.reverter("II")).must_equal 2
   end
 
   it "Check symbol string" do
-    skip
+    # skip
     expect(Roman.reverter("XXX")).must_equal 30
   end
 
   it "Check mixed symbol string" do
-    skip
+    # skip
     expect (Roman.reverter("XVII")).must_equal 17
   end
 
   it "Check two hundred and twenty two" do
-    skip
+    # skip
      expect(Roman.reverter("CCXXII")).must_equal 222
   end
 
   it "Check first subtracted value" do
-    skip
+    # skip
     expect(Roman.reverter("IV")).must_equal 4
   end
 
   it "Check another subtracted value" do
-    skip
+    # skip
     expect(Roman.reverter("IX")).must_equal 9
   end
 
   it "Check 19" do
-    skip
+    # skip
     expect(Roman.reverter("XIX")).must_equal 19
   end
 
   it "Check forty" do
-    skip
+    # skip
     expect(Roman.reverter("XL")).must_equal 40
   end
 
   it "Check five hundred and seventy six" do
-    skip
+    # skip
     expect( Roman.reverter("DLXXVI") ).must_equal 576
   end
 
   it  "Check four thousand nine hundred and ninety nine" do
-    skip
+    # skip
     expect( Roman.reverter("MMMMCMXCIX") ).must_equal 4999
   end
 end

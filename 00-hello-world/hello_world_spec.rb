@@ -5,6 +5,7 @@ require_relative 'hello_world'
 
 describe "Hello World" do
   it "When given no name, it should greet the world!" do
+    name = ""
     expect(hello_world).must_equal 'Hello, World!'
   end
 
